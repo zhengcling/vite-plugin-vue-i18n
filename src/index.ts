@@ -48,7 +48,7 @@ export function createI18nPlugin(
 ): Plugin {
   const filter = createFilter(undefined, options?.exclude);
   return {
-    name: "zhengcling:vite-plugin-vue-i18n",
+    name: "zhengchunling:vite-plugin-vue-i18n",
     transform(source: string, id: string) {
       if (isCustomBlock(id) && filter(id)) {
         let lang = getLocale(id);
